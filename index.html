@@ -22,10 +22,11 @@
         document.onkeydown = disableKey;
 
         function disableKey(event){
+            console.log(event);
             if(event.keyCode == 123 || event.keyCode == 16 || event.keyCode == 17 || event.keyCode == 18 || event.keyCode == 21){
-                alert("해당 키보드는 사용할 수 없습니다.")
-                return false;
-                event.returnValue = false;
+                // alert("해당 키보드는 사용할 수 없습니다.")
+                // return false;
+                // event.returnValue = false;
             }
 
         }
@@ -35,7 +36,6 @@
         //우클릭 막기
         document.onmousedown = disableclick;
         status = "해당 사이트는 우클릭을 할 수 없습니다.";
-
 
         function disableclick(event){
             console.log(event);
