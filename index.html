@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지에서 우클릭 막기 / f12(검사창 열기) 막기 / 드래그(마우스로 작성된 텍스트 가져오기) 막기</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
+    <script type="text/javascript">
         //F12(검사창 열기) 막기
         $(document).ready(function(){
             
@@ -15,10 +15,12 @@
                 if(e.keyCode == 123){  /*F12 키보드를 눌렀을 때*/
                     e.preventDefault();
                     e.returnValue = false;
+                    alert("해당 키보드는 사용할 수 없습니다.");
                 }
                 if(e.keyCode == 17){
                     e.preventDefault();
                     e.returnValue = false;
+                    alert("해당 키보드는 사용할 수 없습니다.");
                 }
             });
         });
