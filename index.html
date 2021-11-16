@@ -11,7 +11,7 @@
         $(document).ready(function(){
             
             $(document).bind("keydown", function(e){
-                console.log(e);
+                //console.log(e);
                 if(e.keyCode == 123){  /*F12 키보드를 눌렀을 때*/
                     e.preventDefault();
                     e.returnValue = false;
@@ -30,7 +30,7 @@
         status = "해당 사이트는 우클릭을 할 수 없습니다.";
 
         function disableclick(event){
-            console.log(event);
+            //console.log(event);
             if(event.button == 2){  /*마우스를 우클릭 한 상태*/
                 alert(status);
                 return false;
